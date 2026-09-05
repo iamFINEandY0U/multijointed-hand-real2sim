@@ -130,17 +130,6 @@ twin_param_tuner/
     twin_playback.py        # 트윈 rollout 실행기(단일/병렬 환경), USD 드라이브 적용
     cma_tuning.py            # CMA-ES 튜닝 루프(순수 로직, Isaac Sim 비의존)
     _vendor/cma/             # vendor된 pycma (BSD-3-Clause)
-  tests/
-    test_cma_tuning.py
-    test_twin_playback.py
-```
-
-## 테스트
-
-Isaac Sim 비의존 로직(`cma_tuning.py`)은 일반 Python 환경에서 pytest로 실행할 수 있습니다.
-
-```bash
-pytest twin_param_tuner/tests/test_cma_tuning.py
 ```
 
 ## Acknowledgement
