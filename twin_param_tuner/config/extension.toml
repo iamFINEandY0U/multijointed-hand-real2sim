@@ -1,0 +1,17 @@
+[package]
+version = "0.1.0"
+title = "Parameter Tuning"
+description = "실물-트윈 로봇 손 관절 궤적 파라미터 자동 정합 Extension (Mode B: 궤적 파일 재생)"
+category = "Simulation"
+keywords = ["twin", "tuning", "physx", "cma-es"]
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.kit.window.filepicker" = {}
+"omni.usd" = {}
+"isaacsim.core.api" = {}
+"isaacsim.core.prims" = {}
+"isaacsim.core.cloner" = {}  # Step 2 병렬 env (Isaac Lab식 GridCloner + replicate_physics)
+
+[[python.module]]
+name = "twin_param_tuner"
